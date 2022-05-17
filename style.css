@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+body{
+    font-size: 3em;
+    font-family: 'PT Sans Narrow', sans-serif;
+   }
+
+#grid-container{display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(5em,1fr));
+       grid-auto-rows: minmax(8em, 1fr);
+       justify-self:center;       
+       gap: 0.2em;
+       padding: 1em;
+           
+}
+ul{
+    list-style-type:none ;
+    padding: 0em;
+}
+
+li {
+    border: 0em double ;
+    border-radius: 0.1em;    
+    text-align: center;
+    background-color: bisque;
+  }
