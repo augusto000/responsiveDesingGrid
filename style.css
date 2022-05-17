@@ -1,25 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 body{
-    font-size: 3em;
-    font-family: 'PT Sans Narrow', sans-serif;
-   }
-
-#grid-container{display: grid;
-       grid-template-columns: repeat(auto-fill, minmax(5em,1fr));
-       grid-auto-rows: minmax(8em, 1fr);
-       justify-self:center;       
-       gap: 0.2em;
-       padding: 1em;
-           
+    font-size:1.5em;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 ul{
     list-style-type:none ;
+       
     padding: 0em;
 }
+#grid-container{display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+       grid-auto-rows:minmax(3em, 1fr);
+       gap: 0.4em;
+       
+       
+}
+li{
+  border:0.1em solid black;
+  border-radius:0.3em;
+  text-align:center;
+  font-size:2.3em;  
+  background-color: bisque;
+}
+.item-card1{
+  grid-column:2/5;
+  
+}
 
-li {
-    border: 0em double ;
-    border-radius: 0.1em;    
-    text-align: center;
-    background-color: bisque;
-  }
+.item-card2{
+grid-column:3/5;
+  
+}
+.item-card3{
+  grid-row:3/5;
+}
+.item-card4{
+  grid-row:4/-1;
+}
+
+.item-card5{
+  grid-row:1/-1;
+}
